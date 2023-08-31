@@ -13,6 +13,6 @@
 Уточнение: пользователь всегда вводит корректное число.
 */
 
-const degreesCelsius = prompt("Введите температуру в градусах Цельсия:  ");
+const degreesCelsius = +prompt("Введите температуру в градусах Цельсия:  ");
 const degreesFahrenheit = (9 / 5) * degreesCelsius + 32;
-alert(`Цельсий: ${degreesCelsius}, Фаренгейт: ${degreesFahrenheit}`);
+alert(`Цельсий: ${degreesCelsius}, Фаренгейт: ${Math.round(degreesFahrenheit*100)/100}`);
