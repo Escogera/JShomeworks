@@ -5,9 +5,12 @@
 Если есть какие-либо недочеты в коде, можете их исправить.
 */
 
+// let test = confirm("У вас много денег?");
+// if (test === true) {
+//   console.log("Скоро будем у вас ;)");
+// } else {
+//   console.log("До свидания.");
+// }
+
 let test = confirm("У вас много денег?");
-if (test === true) {
-  console.log("Скоро будем у вас ;)");
-} else {
-  console.log("До свидания.");
-}
+test === true ? console.log("Скоро будем у ваc") : console.log("До свидания.");

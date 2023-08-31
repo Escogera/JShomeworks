@@ -23,4 +23,14 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const number = +prompt("Введите целое число");
+if (isNaN(number)) {
+    console.log("Это не число");
+} else {
+    const ones = number % 10;
+    const tens = Math.round(number / 10) % 10;
+    const hundreds = Math.round(number / 100) % 10;
+    console.log(
+        `В числе ${number} количество сотен: ${hundreds}, десятков: ${tens}, единиц: ${ones}`
+    );
+}

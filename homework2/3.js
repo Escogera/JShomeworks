@@ -14,4 +14,15 @@
 число 32.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const dayNumber = +prompt("Введите целое число в интервале от 1 до 31");
+if (isNaN(dayNumber)) {
+    console.log("Это не число");
+} else if (dayNumber > 0 && dayNumber < 11) {
+    console.log(`Число ${dayNumber} попадает в 1ю декаду месяца.`);
+} else if (dayNumber > 10 && dayNumber < 21) {
+    console.log(`Число ${dayNumber} попадает в 2ю декаду месяца.`);
+} else if (dayNumber > 20 && dayNumber < 32) {
+    console.log(`Число ${dayNumber} попадает в 3ю декаду месяца.`);
+} else {
+    console.log("Неверное значение");
+}
