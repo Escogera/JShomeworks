@@ -15,7 +15,7 @@
 */
 
 const dayNumber = +prompt("Введите целое число в интервале от 1 до 31");
-if (isNaN(dayNumber)) {
+if (Number.isNaN(dayNumber)) {
     console.log("Это не число");
 } else if (dayNumber > 0 && dayNumber < 11) {
     console.log(`Число ${dayNumber} попадает в 1ю декаду месяца.`);

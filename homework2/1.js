@@ -15,10 +15,10 @@
 
 const positive = +prompt("Введите положительное число");
 const negative = +prompt("Введите отрицательное число");
-if (isNaN(positive) || isNaN(negative)) {
+if (Number.isNaN(positive) || Number.isNaN(negative)) {
     console.log("Одно или более значений некорректно.");
-} else if (positive < 0 || negative > 0) {
-    console.log("Одно или более значений некорректно.");
-} else {
+} else if (positive > 0 && negative < 0) {
     console.log("Все значения верные.");
+} else {
+    console.log("Одно или более значений некорректно.");
 }

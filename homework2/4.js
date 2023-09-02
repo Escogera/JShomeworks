@@ -24,7 +24,7 @@
 */
 
 const number = +prompt("Введите целое число");
-if (isNaN(number)) {
+if (Number.isNaN(number)) {
     console.log("Это не число");
 } else {
     const ones = number % 10;
