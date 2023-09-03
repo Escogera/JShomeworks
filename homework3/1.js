@@ -7,4 +7,11 @@
 который получаем от функции, в консоль.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+function cube(number) {
+    if (Number.isNaN(number)) {
+        return;
+    }
+    return number ** 3;
+}
+
+console.log(cube(2));
