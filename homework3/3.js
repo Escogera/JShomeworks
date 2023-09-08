@@ -14,27 +14,10 @@ function maxNumber(num1, num2, num3) {
     if (Number.isNaN(num1) || Number.isNaN(num2) || Number.isNaN(num3)) {
         return console.log("Значение задано неверно");
     }
-    if (num1 > num2 && num2 >= num3) {
-        console.log(
-            `Максимальное значение среди чисел ${num1}, ${num2}, ${num3} равно ${num1}`
-        );
-    } else if (num1 > num2 && num1 > num3) {
-        console.log(
-            `Максимальное значение среди чисел ${num1}, ${num2}, ${num3} равно ${num1}`
-        );
-    } else if (num1 > num2 && num1 < num3) {
-        console.log(
-            `Максимальное значение среди чисел ${num1}, ${num2}, ${num3} равно ${num3}`
-        );
-    } else if (num1 < num2 && num2 < num3) {
-        console.log(
-            `Максимальное значение среди чисел ${num1}, ${num2}, ${num3} равно ${num3}`
-        );
-    } else {
-        console.log(
-            `Максимальное значение среди чисел ${num1}, ${num2}, ${num3} равно ${num2}`
-        );
-    }
+    const max = Math.max(num1, num2, num3)
+    console.log(
+        `Максимальное значение среди чисел ${num1}, ${num2}, ${num3} равно ${max}`
+    );
 }
 
 const num1 = +prompt("Введите 1е число");
