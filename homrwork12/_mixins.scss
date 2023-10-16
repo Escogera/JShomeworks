@@ -1,0 +1,32 @@
+@mixin contenCenter() {
+    margin: 0 auto;
+    max-width: 1126px;
+}
+
+@mixin LaptopContenCenter() {
+    margin: 0 auto;
+    max-width: 1010px;
+}
+
+@mixin TabletContenCenter() {
+    margin: 0 auto;
+    max-width: 736px;
+}
+
+@mixin MobileHorisontContenCenter() {
+    margin: 0 auto;
+    max-width: 393px;
+}
+
+@mixin MobileVerticalContenCenter() {
+    margin: 0 auto;
+    max-width: 359px;
+}
+
+@mixin contentFlexCenter() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
